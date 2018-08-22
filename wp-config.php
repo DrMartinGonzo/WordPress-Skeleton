@@ -16,8 +16,13 @@ if ( file_exists( dirname( __FILE__ ) . '/local-config.php' ) ) {
 // ========================
 // Custom Content Directory
 // ========================
-define( 'WP_CONTENT_DIR', dirname( __FILE__ ) . '/content' );
-define( 'WP_CONTENT_URL', 'http://' . $_SERVER['HTTP_HOST'] . '/content' );
+$protocol = $_SERVER['HTTPS'] === 'on' ? 'https' : 'http';
+
+define( 'WP_CONTENT_DIR',  	dirname( __FILE__ ) . '/content' );
+define( 'WP_CONTENT_URL', 	$protocol . '://' . $_SERVER['HTTP_HOST'] . '/content' );
+
+define( 'WP_SITEURL', 		$protocol . '://' . $_SERVER['HTTP_HOST'] . '/wp/');
+define( 'WP_HOME', 			$protocol . '://' . $_SERVER['HTTP_HOST'] . '/');
 
 // ================================================
 // You almost certainly do not want to change these
