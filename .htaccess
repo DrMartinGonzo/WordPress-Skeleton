@@ -8,30 +8,10 @@ Options -Indexes
     Deny from all
 </FilesMatch>
 
-<Files .htaccess>
-    Order allow,deny
-    Deny from all
-</Files>
-
-<Files wp-config.php>
-    Order allow,deny
-    Deny from all
-</Files>
-
-<Files local-config.php>
-    Order allow,deny
-    Deny from all
-</Files>
-
-<Files composer.json>
-    Order allow,deny
-    Deny from all
-</Files>
-
-<Files composer.lock>
-    Order allow,deny
-    Deny from all
-</Files>
+<FilesMatch ".htaccess|wp-config.php|local-config.php|composer.(json|lock)|php.ini|wp-cli.yml">
+  Order allow,deny
+  Deny from all
+</FilesMatch>
 
 <Files robots.txt>
     Allow from all
