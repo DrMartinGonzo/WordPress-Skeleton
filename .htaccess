@@ -8,7 +8,7 @@ Options -Indexes
     Deny from all
 </FilesMatch>
 
-<FilesMatch ".htaccess|wp-config.php|local-config.php|composer.(json|lock)|php.ini|wp-cli.yml">
+<FilesMatch ".htaccess|wp-config.php|local-config.php|composer.(json|lock)|php.ini|wp-cli.yml|.editorconfig">
   Order allow,deny
   Deny from all
 </FilesMatch>
