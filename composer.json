@@ -1,0 +1,13 @@
+{
+    "name": "martin/word-press-skeleton",
+    "authors": [
+        {
+            "name": "Martin P",
+            "email": "miloo_de_tours@hotmail.fr"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "johnpbloch/wordpress": "4.9.8"
+    }
+}

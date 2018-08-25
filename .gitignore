@@ -6,3 +6,5 @@
 /db-sync
 /content/upgrade/
 .DS_Store
+/vendor/
+/wordpress/
