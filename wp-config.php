@@ -21,7 +21,7 @@ $protocol = $_SERVER['HTTPS'] === 'on' ? 'https' : 'http';
 define( 'WP_CONTENT_DIR',  	dirname( __FILE__ ) . '/content' );
 define( 'WP_CONTENT_URL', 	$protocol . '://' . $_SERVER['HTTP_HOST'] . '/content' );
 
-define( 'WP_SITEURL', 		$protocol . '://' . $_SERVER['HTTP_HOST'] . '/wp/');
+define( 'WP_SITEURL', 		$protocol . '://' . $_SERVER['HTTP_HOST'] . '/wordpress/');
 define( 'WP_HOME', 			$protocol . '://' . $_SERVER['HTTP_HOST'] . '/');
 
 // ================================================
